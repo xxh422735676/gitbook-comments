@@ -57,6 +57,10 @@
                 
             
                 
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -79,6 +83,7 @@
         
     
     
+    
     <meta name="HandheldFriendly" content="true"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -91,6 +96,11 @@
     
     
     <link rel="prev" href="npm使用指南.html" />
+    
+
+    
+    
+    
     
 
     </head>
@@ -115,7 +125,12 @@
     
         
         <li>
-            <a href="www.baidu.com" target="_blank" class="custom-link">Home</a>
+            <a href="www.baidu.com" target="_blank" class="custom-link">baidu</a>
+        </li>
+    
+        
+        <li>
+            <a href="www.cnblogs.com/tldr" target="_blank" class="custom-link">我的博客</a>
         </li>
     
     
@@ -204,6 +219,36 @@
                         <b>2.3.1.</b>
                     
                     gitbook插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="gitalk评论插件.html">
+            
+                <a href="gitalk评论插件.html">
+            
+                    
+                        <b>2.3.2.</b>
+                    
+                    gitalk评论插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="参考更多.html">
+            
+                <a href="参考更多.html">
+            
+                    
+                        <b>2.3.3.</b>
+                    
+                    参考更多
             
                 </a>
             
@@ -317,89 +362,95 @@ gitbook -V <span class="hljs-comment">//&#x81EA;&#x52A8;&#x5B89;&#x88C5;gitbook<
 <h3 id="bookjson"><a name="bookjson" class="anchor-navigation-ex-anchor" href="#bookjson"><i class="fa fa-link" aria-hidden="true"></i></a>2.3.1.2.2. book.json</h3>
 <p>&#x4E3B;&#x8981;&#x5B58;&#x653E;&#x914D;&#x7F6E;&#x4FE1;&#x606F;</p>
 <pre><code class="lang-json">{
-    <span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-string">&quot;Blankj&apos;s Glory&quot;</span>,
-    <span class="hljs-string">&quot;author&quot;</span>: <span class="hljs-string">&quot;Blankj&quot;</span>,
-    <span class="hljs-string">&quot;description&quot;</span>: <span class="hljs-string">&quot;select * from learn&quot;</span>,
-    <span class="hljs-string">&quot;language&quot;</span>: <span class="hljs-string">&quot;zh-hans&quot;</span>,
-    <span class="hljs-string">&quot;gitbook&quot;</span>: <span class="hljs-string">&quot;3.2.3&quot;</span>,
-    <span class="hljs-string">&quot;styles&quot;</span>: {
-        <span class="hljs-string">&quot;website&quot;</span>: <span class="hljs-string">&quot;./styles/website.css&quot;</span>
-    },
-    <span class="hljs-string">&quot;structure&quot;</span>: {
-        <span class="hljs-string">&quot;readme&quot;</span>: <span class="hljs-string">&quot;README.md&quot;</span>
-    },
-    <span class="hljs-string">&quot;links&quot;</span>: {
-        <span class="hljs-string">&quot;sidebar&quot;</span>: {
-            <span class="hljs-string">&quot;&#x6211;&#x7684;&#x72D7;&#x7A9D;&quot;</span>: <span class="hljs-string">&quot;https://blankj.com&quot;</span>
+    <span class="hljs-string">&quot;title&quot;</span>:<span class="hljs-string">&quot;Flask&#x5B66;&#x4E60;&quot;</span>,
+    <span class="hljs-string">&quot;author&quot;</span>:<span class="hljs-string">&quot;&#x4E00;&#x5757;&#x94B1;&#x7684;&#x4E89;&#x8BBA;&quot;</span>,
+    <span class="hljs-string">&quot;description&quot;</span>:<span class="hljs-string">&quot;&#x8BB0;&#x5F55;Flask&#x7684;&#x5B66;&#x4E60;&#x8FC7;&#x7A0B;&#xFF0C;&#x4EE5;&#x53CA;&#x5176;&#x4ED6;&#x5DE5;&#x5177;&#x7684;&#x914D;&#x7F6E;&quot;</span>,
+    <span class="hljs-string">&quot;language&quot;</span>:<span class="hljs-string">&quot;zh-hans&quot;</span>,
+    <span class="hljs-string">&quot;links&quot;</span>:{
+        <span class="hljs-string">&quot;sidebar&quot;</span>:{
+            <span class="hljs-string">&quot;Home&quot;</span>: <span class="hljs-string">&quot;www.baidu.com&quot;</span>
         }
     },
-    <span class="hljs-string">&quot;plugins&quot;</span>: [
-        <span class="hljs-string">&quot;-sharing&quot;</span>,
-        <span class="hljs-string">&quot;splitter&quot;</span>,
-        <span class="hljs-string">&quot;expandable-chapters-small&quot;</span>,
-        <span class="hljs-string">&quot;anchors&quot;</span>,
+    <span class="hljs-string">&quot;styles&quot;</span>:{
+        <span class="hljs-string">&quot;website&quot;</span>:<span class="hljs-string">&quot;&quot;</span>
+    },
 
+    <span class="hljs-string">&quot;plugins&quot;</span>: [
+        <span class="hljs-string">&quot;-lunr&quot;</span>, <span class="hljs-string">&quot;-search&quot;</span>, <span class="hljs-string">&quot;search-pro&quot;</span>,
+        <span class="hljs-string">&quot;chapter-fold&quot;</span>,
+        <span class="hljs-string">&quot;splitter&quot;</span>,
+        <span class="hljs-string">&quot;tbfed-pagefooter&quot;</span>,
+        <span class="hljs-string">&quot;page-treeview&quot;</span>,
+        <span class="hljs-string">&quot;popup&quot;</span>,
+        <span class="hljs-string">&quot;hide-element&quot;</span>,
+        <span class="hljs-string">&quot;theme-comscore&quot;</span>,
+        <span class="hljs-string">&quot;copy-code-button&quot;</span>,
+        <span class="hljs-string">&quot;todo&quot;</span>,
+        <span class="hljs-string">&quot;insert-logo&quot;</span>,
         <span class="hljs-string">&quot;github&quot;</span>,
-        <span class="hljs-string">&quot;github-buttons&quot;</span>,
-        <span class="hljs-string">&quot;donate&quot;</span>,
-        <span class="hljs-string">&quot;sharing-plus&quot;</span>,
+        <span class="hljs-string">&quot;lightbox&quot;</span>,
+        <span class="hljs-string">&quot;auto-scroll-table&quot;</span>,
         <span class="hljs-string">&quot;anchor-navigation-ex&quot;</span>,
+        <span class="hljs-string">&quot;mygitalk&quot;</span>,
+        <span class="hljs-string">&quot;copyright&quot;</span>,
+        <span class="hljs-string">&quot;pageview-count&quot;</span>,
+        <span class="hljs-string">&quot;auto-scroll-table&quot;</span>,
         <span class="hljs-string">&quot;favicon&quot;</span>
     ],
     <span class="hljs-string">&quot;pluginsConfig&quot;</span>: {
-        <span class="hljs-string">&quot;github&quot;</span>: {
-            <span class="hljs-string">&quot;url&quot;</span>: <span class="hljs-string">&quot;https://github.com/Blankj&quot;</span>
+        <span class="hljs-string">&quot;theme-default&quot;</span>: {
+            <span class="hljs-string">&quot;showLevel&quot;</span>: <span class="hljs-literal">true</span>
         },
-        <span class="hljs-string">&quot;github-buttons&quot;</span>: {
-            <span class="hljs-string">&quot;buttons&quot;</span>: [{
-                <span class="hljs-string">&quot;user&quot;</span>: <span class="hljs-string">&quot;Blankj&quot;</span>,
-                <span class="hljs-string">&quot;repo&quot;</span>: <span class="hljs-string">&quot;glory&quot;</span>,
-                <span class="hljs-string">&quot;type&quot;</span>: <span class="hljs-string">&quot;star&quot;</span>,
-                <span class="hljs-string">&quot;size&quot;</span>: <span class="hljs-string">&quot;small&quot;</span>,
-                <span class="hljs-string">&quot;count&quot;</span>: <span class="hljs-literal">true</span>
-                }
-            ]
+        <span class="hljs-string">&quot;tbfed-pagefooter&quot;</span>: {
+            <span class="hljs-string">&quot;copyright&quot;</span>: <span class="hljs-string">&quot;Copyright &amp;copy Xianghao Xu 2019&quot;</span>,
+            <span class="hljs-string">&quot;modify_label&quot;</span>: <span class="hljs-string">&quot;&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;&quot;</span>,
+            <span class="hljs-string">&quot;modify_format&quot;</span>: <span class="hljs-string">&quot;YYYY-MM-DD HH:mm:ss&quot;</span>
         },
-        <span class="hljs-string">&quot;donate&quot;</span>: {
-            <span class="hljs-string">&quot;alipay&quot;</span>: <span class="hljs-string">&quot;./source/images/donate.png&quot;</span>,
-            <span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
-            <span class="hljs-string">&quot;button&quot;</span>: <span class="hljs-string">&quot;&#x8D5E;&#x8D4F;&quot;</span>,
-            <span class="hljs-string">&quot;alipayText&quot;</span>: <span class="hljs-string">&quot; &quot;</span>
+        <span class="hljs-string">&quot;page-treeview&quot;</span>: {
+            <span class="hljs-string">&quot;copyright&quot;</span>: <span class="hljs-string">&quot;Copyright &amp;#169;xxh&quot;</span>,
+            <span class="hljs-string">&quot;minHeaderCount&quot;</span>: <span class="hljs-string">&quot;2&quot;</span>,
+            <span class="hljs-string">&quot;minHeaderDeep&quot;</span>: <span class="hljs-string">&quot;2&quot;</span>
         },
-        <span class="hljs-string">&quot;sharing&quot;</span>: {
-            <span class="hljs-string">&quot;douban&quot;</span>: <span class="hljs-literal">false</span>,
-            <span class="hljs-string">&quot;facebook&quot;</span>: <span class="hljs-literal">false</span>,
-            <span class="hljs-string">&quot;google&quot;</span>: <span class="hljs-literal">false</span>,
-            <span class="hljs-string">&quot;hatenaBookmark&quot;</span>: <span class="hljs-literal">false</span>,
-            <span class="hljs-string">&quot;instapaper&quot;</span>: <span class="hljs-literal">false</span>,
-            <span class="hljs-string">&quot;line&quot;</span>: <span class="hljs-literal">false</span>,
-            <span class="hljs-string">&quot;linkedin&quot;</span>: <span class="hljs-literal">false</span>,
-            <span class="hljs-string">&quot;messenger&quot;</span>: <span class="hljs-literal">false</span>,
-            <span class="hljs-string">&quot;pocket&quot;</span>: <span class="hljs-literal">false</span>,
-            <span class="hljs-string">&quot;qq&quot;</span>: <span class="hljs-literal">false</span>,
-            <span class="hljs-string">&quot;qzone&quot;</span>: <span class="hljs-literal">false</span>,
-            <span class="hljs-string">&quot;stumbleupon&quot;</span>: <span class="hljs-literal">false</span>,
-            <span class="hljs-string">&quot;twitter&quot;</span>: <span class="hljs-literal">false</span>,
-            <span class="hljs-string">&quot;viber&quot;</span>: <span class="hljs-literal">false</span>,
-            <span class="hljs-string">&quot;vk&quot;</span>: <span class="hljs-literal">false</span>,
-            <span class="hljs-string">&quot;weibo&quot;</span>: <span class="hljs-literal">false</span>,
-            <span class="hljs-string">&quot;whatsapp&quot;</span>: <span class="hljs-literal">false</span>,
-            <span class="hljs-string">&quot;all&quot;</span>: [
-                <span class="hljs-string">&quot;google&quot;</span>, <span class="hljs-string">&quot;facebook&quot;</span>, <span class="hljs-string">&quot;weibo&quot;</span>, <span class="hljs-string">&quot;twitter&quot;</span>,
-                <span class="hljs-string">&quot;qq&quot;</span>, <span class="hljs-string">&quot;qzone&quot;</span>, <span class="hljs-string">&quot;linkedin&quot;</span>, <span class="hljs-string">&quot;pocket&quot;</span>
-            ]
+        <span class="hljs-string">&quot;github&quot;</span>:{
+            <span class="hljs-string">&quot;url&quot;</span>:<span class="hljs-string">&quot;https://github.com/xxh422735676&quot;</span>
         },
-        <span class="hljs-string">&quot;anchor-navigation-ex&quot;</span>: {
-            <span class="hljs-string">&quot;showLevel&quot;</span>: <span class="hljs-literal">false</span>
+        <span class="hljs-string">&quot;hide-element&quot;</span>:{
+            <span class="hljs-string">&quot;elements&quot;</span>:[<span class="hljs-string">&quot;.gitbook-link&quot;</span>,<span class="hljs-string">&quot;.treeview__container-title&quot;</span>]
         },
-        <span class="hljs-string">&quot;favicon&quot;</span>:{
-            <span class="hljs-string">&quot;shortcut&quot;</span>: <span class="hljs-string">&quot;./source/images/favicon.jpg&quot;</span>,
-            <span class="hljs-string">&quot;bookmark&quot;</span>: <span class="hljs-string">&quot;./source/images/favicon.jpg&quot;</span>,
-            <span class="hljs-string">&quot;appleTouch&quot;</span>: <span class="hljs-string">&quot;./source/images/apple-touch-icon.jpg&quot;</span>,
-            <span class="hljs-string">&quot;appleTouchMore&quot;</span>: {
-                <span class="hljs-string">&quot;120x120&quot;</span>: <span class="hljs-string">&quot;./source/images/apple-touch-icon.jpg&quot;</span>,
-                <span class="hljs-string">&quot;180x180&quot;</span>: <span class="hljs-string">&quot;./source/images/apple-touch-icon.jpg&quot;</span>
+        <span class="hljs-string">&quot;anchor-navigation-ex&quot;</span>:{
+            <span class="hljs-string">&quot;showLevel&quot;</span>: <span class="hljs-literal">true</span>,
+            <span class="hljs-string">&quot;associatedWithSummary&quot;</span>: <span class="hljs-literal">true</span>,
+            <span class="hljs-string">&quot;printLog&quot;</span>: <span class="hljs-literal">false</span>,
+            <span class="hljs-string">&quot;multipleH1&quot;</span>: <span class="hljs-literal">true</span>,
+            <span class="hljs-string">&quot;mode&quot;</span>: <span class="hljs-string">&quot;float&quot;</span>,
+            <span class="hljs-string">&quot;showGoTop&quot;</span>:<span class="hljs-literal">true</span>,
+            <span class="hljs-string">&quot;float&quot;</span>: {
+                <span class="hljs-string">&quot;floatIcon&quot;</span>: <span class="hljs-string">&quot;fa fa-anchor&quot;</span>,
+                <span class="hljs-string">&quot;showLevelIcon&quot;</span>: <span class="hljs-literal">false</span>,
+                <span class="hljs-string">&quot;level1Icon&quot;</span>: <span class="hljs-string">&quot;fa fa-hand-o-right&quot;</span>,
+                <span class="hljs-string">&quot;level2Icon&quot;</span>: <span class="hljs-string">&quot;fa fa-hand-o-right&quot;</span>,
+                <span class="hljs-string">&quot;level3Icon&quot;</span>: <span class="hljs-string">&quot;fa fa-hand-o-right&quot;</span>
             }
+        },
+        <span class="hljs-string">&quot;pageTop&quot;</span>: {
+            <span class="hljs-string">&quot;showLevelIcon&quot;</span>: <span class="hljs-literal">false</span>,
+            <span class="hljs-string">&quot;level1Icon&quot;</span>: <span class="hljs-string">&quot;fa fa-hand-o-right&quot;</span>,
+            <span class="hljs-string">&quot;level2Icon&quot;</span>: <span class="hljs-string">&quot;fa fa-hand-o-right&quot;</span>,
+            <span class="hljs-string">&quot;level3Icon&quot;</span>: <span class="hljs-string">&quot;fa fa-hand-o-right&quot;</span>
+        },
+        <span class="hljs-string">&quot;mygitalk&quot;</span>: { 
+            <span class="hljs-string">&quot;clientID&quot;</span>: <span class="hljs-string">&quot;c5904cc07730a233dcda&quot;</span>, 
+            <span class="hljs-string">&quot;clientSecret&quot;</span>: <span class="hljs-string">&quot;07ea6ce65cc6594c7a11bb150f59d572cd3f9cc2&quot;</span>, 
+            <span class="hljs-string">&quot;repo&quot;</span>: <span class="hljs-string">&quot;gitbook-comments&quot;</span>, 
+            <span class="hljs-string">&quot;owner&quot;</span>: <span class="hljs-string">&quot;xxh422735676&quot;</span>, 
+            <span class="hljs-string">&quot;admin&quot;</span>: [<span class="hljs-string">&quot;xxh422735676&quot;</span>], 
+            <span class="hljs-string">&quot;distractionFreeMode&quot;</span>: <span class="hljs-literal">false</span> 
+        },
+        <span class="hljs-string">&quot;copyright&quot;</span>: { 
+            <span class="hljs-string">&quot;site&quot;</span>: <span class="hljs-string">&quot;https://xxh422735676.github.io/gitbook-comments/&quot;</span>, 
+            <span class="hljs-string">&quot;author&quot;</span>: <span class="hljs-string">&quot;&#x4E00;&#x5757;&#x94B1;&#x7684;&#x4E89;&#x8BBA;&quot;</span>, 
+            <span class="hljs-string">&quot;website&quot;</span>: <span class="hljs-string">&quot;&#x4E00;&#x5757;&#x94B1;&#x7684;&#x4E89;&#x8BBA;&quot;</span>, 
+            <span class="hljs-string">&quot;image&quot;</span>: <span class="hljs-string">&quot;https://avatars3.githubusercontent.com/u/38188115?s=460&amp;v=4&quot;</span> 
         }
     }
 }
@@ -438,7 +489,7 @@ gitbook -V <span class="hljs-comment">//&#x81EA;&#x52A8;&#x5B89;&#x88C5;gitbook<
 <span class="hljs-code">    * [We love feedback](part2/feedback_please.md)</span>
 <span class="hljs-code">    * [Better tools for authors](part2/better_tools.md)</span>
 </code></pre>
-<p> <a href="gitbook&#x4F7F;&#x7528;&#x6307;&#x5357;.assets/1944467-de97699c5919469e.webp" data-lightbox="1d10b4b7-1794-4f4a-a155-500c507e7aa3" data-title="img"><img src="gitbook&#x4F7F;&#x7528;&#x6307;&#x5357;.assets/1944467-de97699c5919469e.webp" alt="img"></a></p>
+<p> <a href="gitbook&#x4F7F;&#x7528;&#x6307;&#x5357;.assets/1944467-de97699c5919469e.webp" data-lightbox="7ee5ad10-836b-4858-97ea-d768855dd4c2" data-title="img"><img src="gitbook&#x4F7F;&#x7528;&#x6307;&#x5357;.assets/1944467-de97699c5919469e.webp" alt="img"></a></p>
 <p> <strong>  &#x6211;&#x4EEC;&#x901A;&#x8FC7;&#x4F7F;&#x7528; <code>&#x6807;&#x9898;</code> &#x6216;&#x8005; <code>&#x6C34;&#x5E73;&#x5206;&#x5272;&#x7EBF;</code> &#x5C06; GitBook &#x5206;&#x4E3A;&#x51E0;&#x4E2A;&#x4E0D;&#x540C;&#x7684;&#x90E8;&#x5206;</strong></p>
 <pre><code class="lang-markdown"><span class="hljs-section"># Summary</span>
 
@@ -457,7 +508,7 @@ gitbook -V <span class="hljs-comment">//&#x81EA;&#x52A8;&#x5B89;&#x88C5;gitbook<
 
 <span class="hljs-bullet">* </span>[<span class="hljs-string">Last part without title</span>](<span class="hljs-link">part3/title.md</span>)
 </code></pre>
-<p> <a href="gitbook&#x4F7F;&#x7528;&#x6307;&#x5357;.assets/1944467-e80d5e46997e5eb4.webp" data-lightbox="5432fc3f-a38b-4f6f-b59b-fc353f771075" data-title="img"><img src="gitbook&#x4F7F;&#x7528;&#x6307;&#x5357;.assets/1944467-e80d5e46997e5eb4.webp" alt="img"></a> </p>
+<p> <a href="gitbook&#x4F7F;&#x7528;&#x6307;&#x5357;.assets/1944467-e80d5e46997e5eb4.webp" data-lightbox="e0e7c451-30e8-41e2-a8b8-94ff2ed28304" data-title="img"><img src="gitbook&#x4F7F;&#x7528;&#x6307;&#x5357;.assets/1944467-e80d5e46997e5eb4.webp" alt="img"></a> </p>
 <h2 id="&#x5E38;&#x7528;&#x6307;&#x4EE4;"><a name="&#x5E38;&#x7528;&#x6307;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x7528;&#x6307;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>2.3.1.3. &#x5E38;&#x7528;&#x6307;&#x4EE4;</h2>
 <pre><code>gitbook init [name]//&#x521D;&#x59CB;&#x5316;
 gitbook serve [name] [output]
@@ -468,9 +519,17 @@ gitbook build //&#x751F;&#x6210;&#x6253;&#x5305;&#x4E66;&#x672C;
 <h3 id="no-such-file"><a name="no-such-file" class="anchor-navigation-ex-anchor" href="#no-such-file"><i class="fa fa-link" aria-hidden="true"></i></a>2.3.1.4.1. no such file...</h3>
 <p>&#x627E;&#x5230;<code>C:\Users\&#x4F60;&#x7684;&#x7528;&#x6237;&#x540D;\.gitbook\versions\3.2.3\lib\output\website</code>,&#x628A;&#x6240;&#x6709;&#x7684;<code>confirm:true</code>&#x6539;&#x6210;<code>false</code></p>
 <p></p><footer class="page-footer"><span class="copyright">Copyright &#xA9; Xianghao Xu 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2019-11-15 21:59:09
+2019-11-16 19:04:44
 </span></footer><p></p>
 <div id="gitalk-container"></div>
+
+<pre><code class="lang-html">&#x4F5C;&#x8005;: &#x4E00;&#x5757;&#x94B1;&#x7684;&#x4E89;&#x8BBA;
+&#x94FE;&#x63A5;: https://xxh422735676.github.io/gitbook-comments/gitbook&#x4F7F;&#x7528;&#x6307;&#x5357;.html
+&#x6765;&#x6E90;: &#x4E00;&#x5757;&#x94B1;&#x7684;&#x4E89;&#x8BBA;
+&#x672C;&#x6587;&#x539F;&#x521B;&#x53D1;&#x5E03;&#x4E8E;&#x300C;&#x4E00;&#x5757;&#x94B1;&#x7684;&#x4E89;&#x8BBA;&#x300D;,&#x8F6C;&#x8F7D;&#x8BF7;&#x6CE8;&#x660E;&#x51FA;&#x5904;,&#x8C22;&#x8C22;&#x5408;&#x4F5C;!
+</code></pre>
+<p><a href="https://avatars3.githubusercontent.com/u/38188115?s=460&amp;v=4" data-lightbox="b3fba55f-4f4a-4eb5-bd65-3a2767b343cb" data-title="https://avatars3.githubusercontent.com/u/38188115?s=460&amp;v=4" target="_blank"><img src="https://avatars3.githubusercontent.com/u/38188115?s=460&amp;v=4" alt="https://avatars3.githubusercontent.com/u/38188115?s=460&amp;v=4"></a></p>
+
 <script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style></body></html>
                                 
                                 </section>
@@ -514,7 +573,7 @@ gitbook build //&#x751F;&#x6210;&#x6253;&#x5305;&#x4E66;&#x672C;
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"gitbook使用指南","level":"2.3","depth":1,"next":{"title":"gitbook插件","level":"2.3.1","depth":2,"path":"gitbook插件.md","ref":"gitbook插件.md","articles":[]},"previous":{"title":"npm使用指南","level":"2.2","depth":1,"path":"npm使用指南.md","ref":"npm使用指南.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","chapter-fold","splitter","tbfed-pagefooter","page-treeview","popup","hide-element","theme-comscore","copy-code-button","todo","insert-logo","github","lightbox","auto-scroll-table","anchor-navigation-ex","mygitalk"],"styles":{"website":""},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Xianghao Xu 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"copyright":"Copyright &#169;xxh","minHeaderCount":"2","minHeaderDeep":"2"},"chapter-fold":{},"github":{"url":"https://github.com/xxh422735676"},"pageTop":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"todo":{},"splitter":{},"search-pro":{},"auto-scroll-table":{},"popup":{},"hide-element":{"elements":[".gitbook-link",".treeview__container-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-anchor","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"lightbox":{"jquery":true},"theme-comscore":{},"copy-code-button":{},"mygitalk":{"flipMoveOptions":{},"clientID":"c5904cc07730a233dcda","number":-1,"perPage":10,"proxy":"https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token","admin":["xxh422735676"],"createIssueManually":false,"distractionFreeMode":false,"repo":"gitbook-comments","owner":"xxh422735676","enableHotKey":true,"clientSecret":"07ea6ce65cc6594c7a11bb150f59d572cd3f9cc2","pagerDirection":"last","labels":["Gitalk"]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"insert-logo":{"style":"background: none;","url":"http://www.example.com/my-logo.png"}},"theme":"default","author":"一块钱的争论","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Flask学习","language":"zh-hans","links":{"sidebar":{"Home":"www.baidu.com"}},"gitbook":"*","description":"记录Flask的学习过程，以及其他工具的配置"},"file":{"path":"gitbook使用指南.md","mtime":"2019-11-15T13:59:09.908Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-16T09:35:19.322Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"gitbook使用指南","level":"2.3","depth":1,"next":{"title":"gitbook插件","level":"2.3.1","depth":2,"path":"gitbook插件.md","ref":"gitbook插件.md","articles":[]},"previous":{"title":"npm使用指南","level":"2.2","depth":1,"path":"npm使用指南.md","ref":"npm使用指南.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","chapter-fold","splitter","tbfed-pagefooter","page-treeview","popup","hide-element","theme-comscore","copy-code-button","todo","insert-logo","github","lightbox","auto-scroll-table","anchor-navigation-ex","mygitalk","copyright","pageview-count","auto-scroll-table","favicon"],"styles":{"website":""},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Xianghao Xu 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"copyright":"Copyright &#169;xxh","minHeaderCount":"2","minHeaderDeep":"2"},"chapter-fold":{},"github":{"url":"https://github.com/xxh422735676"},"pageTop":{"showLevelIcon":false,"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right"},"todo":{},"splitter":{},"copyright":{"site":"https://xxh422735676.github.io/gitbook-comments/","author":"一块钱的争论","website":"一块钱的争论","image":"https://avatars3.githubusercontent.com/u/38188115?s=460&v=4"},"search-pro":{},"auto-scroll-table":{},"popup":{},"hide-element":{"elements":[".gitbook-link",".treeview__container-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-anchor","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":true},"favicon":{},"lightbox":{"jquery":true},"theme-comscore":{},"pageview-count":{},"copy-code-button":{},"mygitalk":{"flipMoveOptions":{},"clientID":"c5904cc07730a233dcda","number":-1,"perPage":10,"proxy":"https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token","admin":["xxh422735676"],"createIssueManually":false,"distractionFreeMode":false,"repo":"gitbook-comments","owner":"xxh422735676","enableHotKey":true,"clientSecret":"07ea6ce65cc6594c7a11bb150f59d572cd3f9cc2","pagerDirection":"last","labels":["Gitalk"]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"insert-logo":{"style":"background: none;","url":"http://www.example.com/my-logo.png"}},"theme":"default","author":"一块钱的争论","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Flask学习","language":"zh-hans","links":{"sidebar":{"baidu":"www.baidu.com","我的博客":"www.cnblogs.com/tldr"}},"gitbook":"*","description":"记录Flask的学习过程，以及其他工具的配置"},"file":{"path":"gitbook使用指南.md","mtime":"2019-11-16T11:04:44.204Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-16T11:31:56.098Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -577,6 +636,14 @@ gitbook build //&#x751F;&#x6210;&#x6253;&#x5305;&#x4E66;&#x672C;
     
         
         <script src="gitbook/gitbook-plugin-mygitalk/mygitalk.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copyright/copyright.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
         
     
         
