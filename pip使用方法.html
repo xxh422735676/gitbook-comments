@@ -1,0 +1,476 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>pip使用方法 · Flask学习</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="一块钱的争论">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-page-treeview/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-lightbox/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-auto-scroll-table/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-theme-comscore/test.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="npm使用指南.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="www.baidu.com" target="_blank" class="custom-link">Home</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">环境搭建</li>
+        
+        
+    
+        <li class="chapter active" data-level="2.1" data-path="pip使用方法.html">
+            
+                <a href="pip使用方法.html">
+            
+                    
+                        <b>2.1.</b>
+                    
+                    pip使用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="npm使用指南.html">
+            
+                <a href="npm使用指南.html">
+            
+                    
+                        <b>2.2.</b>
+                    
+                    npm使用指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="gitbook使用指南.html">
+            
+                <a href="gitbook使用指南.html">
+            
+                    
+                        <b>2.3.</b>
+                    
+                    gitbook使用指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="gitbook插件.html">
+            
+                <a href="gitbook插件.html">
+            
+                    
+                        <b>2.3.1.</b>
+                    
+                    gitbook插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="virtualenv和wrapper.html">
+            
+                <a href="virtualenv和wrapper.html">
+            
+                    
+                        <b>2.4.</b>
+                    
+                    virtualenv和virtualenvwrapper
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >pip使用方法</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#pip&#x4F7F;&#x7528;&#x6307;&#x5357;"><b>2.1.1. </b>pip&#x4F7F;&#x7528;&#x6307;&#x5357;</a></li><ul><li><span class="title-icon "></span><a href="#&#x8BBE;&#x7F6E;&#x963F;&#x91CC;&#x4E91;pip&#x6E90;"><b>2.1.1.1. </b>&#x8BBE;&#x7F6E;&#x963F;&#x91CC;&#x4E91;pip&#x6E90;</a></li><ul><li><span class="title-icon "></span><a href="#linux&#x7CFB;&#x7EDF;"><b>2.1.1.1.1. </b>Linux&#x7CFB;&#x7EDF;</a></li><li><span class="title-icon "></span><a href="#windows&#x7CFB;&#x7EDF;"><b>2.1.1.1.2. </b>Windows&#x7CFB;&#x7EDF;</a></li><li><span class="title-icon "></span><a href="#&#x624B;&#x52A8;&#x6307;&#x5B9A;&#x5B89;&#x88C5;&#x6E90;"><b>2.1.1.1.3. </b>&#x624B;&#x52A8;&#x6307;&#x5B9A;&#x5B89;&#x88C5;&#x6E90;</a></li></ul><li><span class="title-icon "></span><a href="#&#x5E38;&#x7528;&#x6307;&#x4EE4;"><b>2.1.1.2. </b>&#x5E38;&#x7528;&#x6307;&#x4EE4;</a></li><ul><li><span class="title-icon "></span><a href="#pip&#x547D;&#x4EE4;&#x6DF7;&#x4E71;"><b>2.1.1.2.1. </b>pip&#x547D;&#x4EE4;&#x6DF7;&#x4E71;</a></li></ul></ul></ul></div><a href="#pip&#x4F7F;&#x7528;&#x6307;&#x5357;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><html><head></head><body><div class="treeview__container"><div class="treeview__container-title"><span class="treeview__main-title">Treeview</span><span class="treeview__copyright">Copyright &#xA9;xxh all right reserved, powered by <a href="https://github.com/aleen42" target="_blank">aleen42</a></span></div><ul>
+<li><div><a href="#&#x8BBE;&#x7F6E;&#x963F;&#x91CC;&#x4E91;pip&#x6E90;">&#x8BBE;&#x7F6E;&#x963F;&#x91CC;&#x4E91;pip&#x6E90;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#linux&#x7CFB;&#x7EDF;">Linux&#x7CFB;&#x7EDF;</a><i></i></div></li>
+<li><div><a href="#windows&#x7CFB;&#x7EDF;">Windows&#x7CFB;&#x7EDF;</a><i></i></div></li>
+<li><div><a href="#&#x624B;&#x52A8;&#x6307;&#x5B9A;&#x5B89;&#x88C5;&#x6E90;">&#x624B;&#x52A8;&#x6307;&#x5B9A;&#x5B89;&#x88C5;&#x6E90;</a><i></i></div></li>
+</ul></li>
+<li><div><a href="#&#x5E38;&#x7528;&#x6307;&#x4EE4;">&#x5E38;&#x7528;&#x6307;&#x4EE4;</a><i class="level__parent level__item level__parent--opened" state="opened" onclick="var curState = this.getAttribute(&apos;state&apos;);var nextState = curState === &apos;opened&apos; ? &apos;hidden&apos; : &apos;opened&apos;;this.setAttribute(&apos;state&apos;, nextState);this.className = this.className.split(curState).join(nextState);var list = this.parentNode.nextElementSibling;if (nextState === &apos;hidden&apos;) {    list.style.display = &apos;none&apos;;} else {    list.style.display = &apos;block&apos;;}"></i></div>
+<ul>
+<li><div><a href="#pip&#x547D;&#x4EE4;&#x6DF7;&#x4E71;">pip&#x547D;&#x4EE4;&#x6DF7;&#x4E71;</a><i></i></div></li>
+</ul></li>
+</ul>
+</div>
+
+<h1 id="pip&#x4F7F;&#x7528;&#x6307;&#x5357;"><a name="pip&#x4F7F;&#x7528;&#x6307;&#x5357;" class="anchor-navigation-ex-anchor" href="#pip&#x4F7F;&#x7528;&#x6307;&#x5357;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1.1. pip&#x4F7F;&#x7528;&#x6307;&#x5357;</h1>
+<h2 id="&#x8BBE;&#x7F6E;&#x963F;&#x91CC;&#x4E91;pip&#x6E90;"><a name="&#x8BBE;&#x7F6E;&#x963F;&#x91CC;&#x4E91;pip&#x6E90;" class="anchor-navigation-ex-anchor" href="#&#x8BBE;&#x7F6E;&#x963F;&#x91CC;&#x4E91;pip&#x6E90;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1.1.1. &#x8BBE;&#x7F6E;&#x963F;&#x91CC;&#x4E91;pip&#x6E90;</h2>
+<h3 id="linux&#x7CFB;&#x7EDF;"><a name="linux&#x7CFB;&#x7EDF;" class="anchor-navigation-ex-anchor" href="#linux&#x7CFB;&#x7EDF;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1.1.1.1. Linux&#x7CFB;&#x7EDF;</h3>
+<pre><code class="lang-C++">cd ~
+mkdir .pip
+vim .pip/pip.conf
+<span class="hljs-comment">//-------&#x5199;&#x5165;------</span>
+[global]
+trusted-host=mirrors.aliyun.com
+index-url=https:<span class="hljs-comment">//mirrors.aliyun.com/pypi/simple/</span>
+<span class="hljs-comment">//----------------</span>
+</code></pre>
+<h3 id="windows&#x7CFB;&#x7EDF;"><a name="windows&#x7CFB;&#x7EDF;" class="anchor-navigation-ex-anchor" href="#windows&#x7CFB;&#x7EDF;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1.1.1.2. Windows&#x7CFB;&#x7EDF;</h3>
+<pre><code class="lang-c++">cd ~
+mkdir pip
+vim pip/pip.inf
+<span class="hljs-comment">//--------&#x5199;&#x5165;------</span>
+[global]
+index-url=https:<span class="hljs-comment">//mirrors.aliyun.com/pypu/simple/</span>
+[install]
+trusted-host=mirrors.aliyun.com
+<span class="hljs-comment">//-----------------</span>
+</code></pre>
+<h3 id="&#x624B;&#x52A8;&#x6307;&#x5B9A;&#x5B89;&#x88C5;&#x6E90;"><a name="&#x624B;&#x52A8;&#x6307;&#x5B9A;&#x5B89;&#x88C5;&#x6E90;" class="anchor-navigation-ex-anchor" href="#&#x624B;&#x52A8;&#x6307;&#x5B9A;&#x5B89;&#x88C5;&#x6E90;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1.1.1.3. &#x624B;&#x52A8;&#x6307;&#x5B9A;&#x5B89;&#x88C5;&#x6E90;</h3>
+<pre><code class="lang-html">pip -i url install package
+http://pypi.douban.com/ &#x8C46;&#x74E3;
+http://pypi.hustunique.com/ &#x534E;&#x4E2D;&#x7406;&#x5DE5;&#x5927;&#x5B66;
+http://pypi.sdutlinux.org/ &#x5C71;&#x4E1C;&#x7406;&#x5DE5;&#x5927;&#x5B66;
+http://pypi.mirrors.ustc.edu.cn/ &#x4E2D;&#x56FD;&#x79D1;&#x5B66;&#x6280;&#x672F;&#x5927;&#x5B66;
+</code></pre>
+<h2 id="&#x5E38;&#x7528;&#x6307;&#x4EE4;"><a name="&#x5E38;&#x7528;&#x6307;&#x4EE4;" class="anchor-navigation-ex-anchor" href="#&#x5E38;&#x7528;&#x6307;&#x4EE4;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1.1.2. &#x5E38;&#x7528;&#x6307;&#x4EE4;</h2>
+<pre><code>//&#x5217;&#x51FA;&#x5DF2;&#x5B89;&#x88C5;&#x7684;&#x5305;
+pip freeze 
+pip list
+//&#x5B89;&#x88C5;requirements.txt
+pip install -r requirements.txt
+//&#x5347;&#x7EA7;&#x672C;&#x5730;&#x5305;
+pip install -U package
+//&#x663E;&#x793A;&#x5305;&#x6240;&#x5728;&#x7684;&#x76EE;&#x5F55;
+pip show -f &lt;package&gt;
+//&#x641C;&#x7D22;&#x5305;
+pip search &lt;key&gt;
+//&#x67E5;&#x8BE2;&#x53EF;&#x5347;&#x7EA7;&#x7684;&#x5305;
+pip list -o
+//&#x6253;&#x5305;
+pip wheel &lt;package&gt;
+//&#x8986;&#x76D6;&#x5168;&#x5C40;&#x5B89;&#x88C5;&#x5305;&#x91CD;&#x65B0;&#x5B89;&#x88C5;&#xFF08;linux&#xFF09;
+pip install --user -I &lt;package&gt;
+</code></pre><h3 id="pip&#x547D;&#x4EE4;&#x6DF7;&#x4E71;"><a name="pip&#x547D;&#x4EE4;&#x6DF7;&#x4E71;" class="anchor-navigation-ex-anchor" href="#pip&#x547D;&#x4EE4;&#x6DF7;&#x4E71;"><i class="fa fa-link" aria-hidden="true"></i></a>2.1.1.2.1. pip&#x547D;&#x4EE4;&#x6DF7;&#x4E71;</h3>
+<ol>
+<li>&#x4F7F;&#x7528;&#x6307;&#x5B9A;&#x865A;&#x62DF;&#x73AF;&#x5883;&#x4E0B;&#x7684;pip</li>
+</ol>
+<pre><code>dir\Scripts\pip.exe list
+</code></pre><ol>
+<li>&#x53BB;&#x6389;&#x4E2D;&#x6587;&#x76EE;&#x5F55;&#x540D;/&#x76EE;&#x5F55;&#x7A7A;&#x683C; </li>
+</ol>
+<p></p><footer class="page-footer"><span class="copyright">Copyright &#xA9; Xianghao Xu 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-11-15 23:01:53
+</span></footer><p></p>
+<div id="gitalk-container"></div>
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style></body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="npm使用指南.html" class="navigation navigation-next " aria-label="Next page: npm使用指南">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"pip使用方法","level":"2.1","depth":1,"next":{"title":"npm使用指南","level":"2.2","depth":1,"path":"npm使用指南.md","ref":"npm使用指南.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","chapter-fold","splitter","tbfed-pagefooter","page-treeview","popup","hide-element","theme-comscore","copy-code-button","todo","insert-logo","github","lightbox","auto-scroll-table","anchor-navigation-ex","mygitalk"],"styles":{"website":""},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy Xianghao Xu 2019","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"page-treeview":{"copyright":"Copyright &#169;xxh","minHeaderCount":"2","minHeaderDeep":"2"},"chapter-fold":{},"github":{"url":"https://github.com/xxh422735676"},"todo":{},"splitter":{},"search-pro":{},"auto-scroll-table":{},"popup":{},"hide-element":{"elements":[".gitbook-link",".treeview__container-title"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"mode":"float","pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"showLevel":true,"showGoTop":true,"printLog":false,"multipleH1":true,"mygitalk":{"clientID":"c5904cc07730a233dcda","clientSecret":"653edbbfbac83b02f05a72ebd7ff555849060125","repo":"gitbook-comments","owner":"xxh422735676","admin":["xxh422735676"],"distractionFreeMode":false},"associatedWithSummary":true,"float":{"floatIcon":"fa fa-anchor","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false}},"lightbox":{"jquery":true},"theme-comscore":{},"copy-code-button":{},"mygitalk":{"flipMoveOptions":{},"clientID":"GitHub Application Client ID","number":-1,"perPage":10,"proxy":"https://cors-anywhere.herokuapp.com/https://github.com/login/oauth/access_token","admin":["GitHub repo owner and collaborators, only these guys can initialize github issues"],"createIssueManually":false,"distractionFreeMode":false,"repo":"GitHub repo","owner":"GitHub repo owner","enableHotKey":true,"clientSecret":"GitHub Application Client Secret","pagerDirection":"last","labels":["Gitalk"]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"insert-logo":{"style":"background: none;","url":"http://www.example.com/my-logo.png"}},"theme":"default","author":"一块钱的争论","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Flask学习","language":"zh-hans","links":{"sidebar":{"Home":"www.baidu.com"}},"gitbook":"*","description":"记录Flask的学习过程，以及其他工具的配置"},"file":{"path":"pip使用方法.md","mtime":"2019-11-15T15:01:53.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-16T07:39:28.308Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lightbox/jquery.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lightbox/lightbox.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script>
+        
+    
+        
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-mygitalk/mygitalk.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-theme-comscore/test.js"></script>
+        
+    
+
+    </body>
+</html>
+
